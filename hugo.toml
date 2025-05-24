@@ -1,6 +1,6 @@
 baseURL = 'https://yuki-portfolio-2025.netlify.app/'  # To change to new domain
 languageCode = 'en-us'
-title = 'My website'
+title = 'Yukihide Takahashi'
 theme = 'typo'
 
 # Google analytics code
@@ -11,7 +11,7 @@ tag = 'tags'
 
 [params]
 # Meta description
-description = "A Tech Blog"
+description = "Yukihide Takahashi's personal website"
 
 showFooter = true
 footerContent = "Your **custom** md `footer`"
@@ -24,13 +24,19 @@ hideHeader = false
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
 homeIntroContent = """
-I am an Italian Software Engineer with a strong foundation in computer science and a passion for solving complex problems.
-I am interested in a range of topics, including algorithms, distributed systems, databases, and information retrieval.
+My name is Yukihide, and I'm a software engineer based in Tokyo, Japan.
+
+
+I have a strong passion for AI and machine learning, both the theory and the applications.
+In my current full-time role I am working on a semantic search feature for a hotel CMS based on a vector store.
+I am interested in a range of topics, including LLMs, AI agents, information retrieval, and more.
+
+Feel free to read [about myself](/about) or to look at my [posts](/posts).
 """
 
 # Collection to display on home
-homeCollectionTitle = 'Posts'
-homeCollection = 'posts'
+# homeCollectionTitle = 'Posts'
+# homeCollection = 'posts'
 
 # Lists parameters
 paginationSize = 100
@@ -46,15 +52,11 @@ home = "Home"
 # Social icons
 [[params.social]]
 name = "linkedin"
-url = "https://www.linkedin.com/in/user/"
-
-[[params.social]]
-name = "medium"
-url = "https://medium.com/@user"
+url = "https://www.linkedin.com/in/yukihide-takahashi/"
 
 [[params.social]]
 name = "github"
-url = "https://github.com/user"
+url = "https://github.com/yuki-zmstr"
 
 # Main menu pages
 [[params.menu]]
