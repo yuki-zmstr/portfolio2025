@@ -1,6 +1,6 @@
 ---
 date: "2025-05-22T08:10:31+09:00"
-draft: true
+draft: false
 title: "Fluent Python Chapter 1: The Python Data Model"
 author: "Yukihide Takahashi"
 summary: "This is a summary"
