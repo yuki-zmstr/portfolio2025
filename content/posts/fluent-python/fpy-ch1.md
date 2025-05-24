@@ -1,5 +1,5 @@
 ---
-date: "2025-05-22T08:10:31+09:00"
+date: "2025-05-22"
 title: "Fluent Python Chapter 1: The Python Data Model"
 author: "Yukihide Takahashi"
 summary: "This chapter is an introduction to how data objects are represented in Python. For custom objects, by implementing special 'dunder' methods, they can behave just like the built-in types like `str` and `int`."
@@ -119,6 +119,6 @@ This allows for a wide selection of numeric types, such as `decimal.Decimal`, `f
 
 Utilizing special methods allows for objects to behave like the primitive data types.
 
-I think this is one of the beauties of Python - the methods you learn in the first few weeks of Python 101 really do stick with you throughout your career!
+Calling `len` on a custom data type drives home the idea that the methods you learn in the first few weeks of Python 101 really do stick with you throughout your career.
 
-Also, to me, whether other Python developers have a nice experience using my classes and APIs is important. It seems implementing dunder methods is one way I can achieve this.
+Also, whether other Python developers have a nice experience using my classes and APIs is important to me. It seems implementing dunder methods on my classes is one way I can achieve this.
