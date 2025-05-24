@@ -74,7 +74,7 @@ url = "/about"
 # Syntax highlight on code blocks
 [markup]
 [markup.highlight]
-style = 'algol'
+style = 'colorful'
 
 # Giscus comments
 [params.giscus]
