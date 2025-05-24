@@ -7,7 +7,7 @@ readTime: true
 toc: true
 ---
 
-_Disclaimer: This article was written with the help of Gemini auto completion. It's scary how well it predicts
+_Disclaimer: This article was written with the help of Gemini auto completion and Cursor Chat. It's scary how well it predicts
 my next phrases, and how 'brain-dead' I become with it, so I might move away from it in the future._
 
 Python inherits from ABC, its predecessor language, the common handling of sequences including strings, lists, arrays, byte sequences, and XML elements.
