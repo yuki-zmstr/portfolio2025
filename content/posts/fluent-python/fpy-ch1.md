@@ -1,18 +1,15 @@
 ---
 date: "2025-05-22T08:10:31+09:00"
-draft: false
 title: "Fluent Python Chapter 1: The Python Data Model"
 author: "Yukihide Takahashi"
-summary: "This is a summary"
+summary: "This chapter is an introduction to how data objects are represented in Python. For custom objects, by implementing special 'dunder' methods, they can behave just like the built-in types like `str` and `int`."
+readTime: true
+toc: true
 ---
 
-## Chapter 1: The Python Data Model
+## \_\_len\_ and \_\_getitem\_\_
 
----
-
-This chapter is an introduction to how data objects are represented in Python. For custom objects, by implementing special 'dunder' methods, they can behave just like the built-in types like `str` and `int`.
-
-For example, consider the following `Shelf` class:
+Consider the following `Shelf` class:
 
 ```python
 class Book:
@@ -79,6 +76,8 @@ The Da Vinci Code by Dan Brown
 Politika by Tom Clancy
 ```
 
+## \_\_repr\_\_ and \_\_str\_\_
+
 We have skipped two dunder methods: `__repr__` and `__str__` in our `Book` class.
 Both of these methods provide the user with a string representation of the object.
 
@@ -106,13 +105,13 @@ This [Stack Overflow thread](https://stackoverflow.com/questions/1436703/what-is
 
 Arithmetic operators can be overloaded as well. Just a couple of examples:
 
-| Operator, | implemented by |
-| :-------: | :------------: |
-|     +     |   `__add__`    |
-|     -     |   `__sub__`    |
-|    \*     |   `__mul__`    |
-|     /     | `__truediv__`  |
-|    //     | `__floordiv__` |
+| Operator | implemented by |
+| :------: | :------------: |
+|    +     |   `__add__`    |
+|    -     |   `__sub__`    |
+|    \*    |   `__mul__`    |
+|    /     | `__truediv__`  |
+|    //    | `__floordiv__` |
 
 This allows for a wide selection of numeric types, such as `decimal.Decimal`, `fractions.Fraction`, and the custom `Vector` type that the author implements in the book.
 
