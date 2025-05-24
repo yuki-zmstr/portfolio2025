@@ -13,6 +13,9 @@ tag = 'tags'
 # Meta description
 description = "A Tech Blog"
 
+showFooter = true
+footerContent = "Your **custom** md `footer`"
+
 # Appearance settings
 theme = 'auto'
 colorPalette = 'default'
@@ -80,7 +83,3 @@ category = "General"
 categoryid = "categoryId"
 mapping = "pathname"
 theme = "preferred_color_scheme"
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
