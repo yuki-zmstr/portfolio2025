@@ -64,12 +64,13 @@ name = "home"
 url = "/"
 
 [[params.menu]]
+name = "about"
+url = "/about"
+
+[[params.menu]]
 name = "posts"
 url = "/posts"
 
-[[params.menu]]
-name = "about"
-url = "/about"
 
 # Syntax highlight on code blocks
 [markup]
