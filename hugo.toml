@@ -14,7 +14,7 @@ tag = 'tags'
 description = "Yukihide Takahashi's personal website"
 
 showFooter = true
-footerContent = "Your **custom** md `footer`"
+footerContent = "Thanks for visiting my page! [old website](https://yuki-portfolio-2024.netlify.app/)"
 
 # Appearance settings
 theme = 'auto'
@@ -22,7 +22,7 @@ colorPalette = 'default'
 hideHeader = false
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Hi!'
+homeIntroTitle = 'Hi there!'
 homeIntroContent = """
 My name is Yukihide, and I'm a software engineer based in Tokyo, Japan.
 
@@ -45,7 +45,7 @@ listDateFormat = '2 Jan 2006'
 
 # Breadcrumbs
 [params.breadcrumbs]
-enabled = true
+enabled = false
 showCurrentPage = true
 home = "Home"
 
