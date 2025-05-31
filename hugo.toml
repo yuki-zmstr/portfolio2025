@@ -14,7 +14,7 @@ tag = 'tags'
 description = "Yukihide Takahashi's personal website"
 
 showFooter = true
-footerContent = "Thanks for visiting my page! [old website](https://yuki-portfolio-2024.netlify.app/)"
+footerContent = "Thanks for visiting my page! and thanks [tomfran/typo](https://github.com/tomfran/typo) for the fantastic theme!"
 
 # Appearance settings
 theme = 'auto'
@@ -28,7 +28,7 @@ My name is Yukihide, and I'm a software engineer based in Tokyo, Japan.
 
 
 I have a strong passion for AI and machine learning, both the theory and the applications.
-In my current full-time role I am working on a semantic search feature for a hotel CMS based on a vector store.
+In my current full-time role I am working on a semantic search feature for a hotel CMS.
 I am interested in a range of topics, including LLMs, AI agents, information retrieval, and more.
 
 Feel free to read [about myself](/about) or to look at my [posts](/posts).
