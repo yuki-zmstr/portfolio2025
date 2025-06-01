@@ -2,7 +2,7 @@
 date: "2025-05-29"
 title: "Overview of courses enrolled in uni"
 author: "Yukihide Takahashi"
-summary: "I took many great courses in uni - here's some of my favorites"
+summary: "I took many great courses in uni - here're some of my favorites"
 readTime: true
 toc: false
 ---
