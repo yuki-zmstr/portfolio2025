@@ -11,7 +11,7 @@ toc: true
 
 ### Dictionary comprehensions
 
-`dictcomps` build `dict` instances using `key:value` pairs from any iterable.
+_dictcomps_ build `dict` instances using `key:value` pairs from any iterable.
 
 For example:
 
@@ -60,8 +60,8 @@ def get_ingredients(food: dict) -> list:
 ```
 
 For `api v2`, a food with `type == 'Fast Food'` should have a list of ingredients.
-For `api v1', a food with `type == 'Fast Food'`should have a single ingredient.
-A Japanese food should have a key`ingredients`, which is a list of ingredients.
+For `api v1`, a food with `type == 'Fast Food'` should have a single ingredient.
+A Japanese food should have a key `ingredients`, which is a list of ingredients.
 
 ```python
 >>> f1 = dict(api=1, type='Fast Food', name='Hamburger', ingredient='Beef')
@@ -82,9 +82,9 @@ ValueError: Invalid record: 'I am hungry'
 ```
 
 Unlike sequence patterns, mapping patterns allow for partial matches. In the example above,
-f1 has a key `name`, which does not appear in any `case` statement, yet it matches.
+`f1` has a key `name`, which does not appear in any `case` statement, yet it matches.
 
-You can also capture extra key-value pairs using `\*\*`.
+You can also capture extra key-value pairs using `**`.
 
 ```python
 >>> food = {'type': 'Fast Food', 'name': 'Hamburger', 'price': '$10.00', 'calories': '700kca\
@@ -115,9 +115,9 @@ Using the `isinstance` test with an ABC is often better than checking whether a 
 
 Whem implementing a custom mapping, the author recommends extending `collections.UserDict` or to wrap a `dict` by composition, instead of subclassing these ABCs. All concrete mapping classes including `collections.UserDict` encapsulate the basic `dict` in their implementation, which means all keys must be _hashable_.
 
-Note that in Python, an object is hashable if it has a hash code that never changes during its lifetime (implements a `\_\_hash\_\_()` method), and can be compared to other objects (implements a `\_\_eq\_\_()` method).
+Note that in Python, an object is hashable if it has a hash code that never changes during its lifetime (implements a `__hash__()` method), and can be compared to other objects (implements a `__eq__()` method).
 
-In practice, custom implementations of `\_\_hash\_\_()` and `\_\_eq\_\_()` should only take into account instance attributes that never change duirng the life of the object.
+In practice, custom implementations of `__hash__()` and `__eq__()` should only take into account instance attributes that never change duirng the life of the object.
 
 ## Common Mapping Methods
 
@@ -163,7 +163,7 @@ index = collections.defaultdict(list)
 
 Here, if some key `word` is not in the `index`, the `default_factory` is called to product an empty list, which is assigned to `index[word]` and returned.
 
-Note that if `dd` is a `defaultdict` and `k` is a missing key, then `dd[k]` will create a default value, but dd.get(k) will not.
+Note that if `dd` is a `defaultdict` and `k` is a missing key, then `dd[k]` will create a default value, but `dd.get(k)` will not.
 
 ```python
 >>> import collections
@@ -177,7 +177,7 @@ True
 
 ### Approach 2: \_\_missing\_\_
 
-By providing a \_\_missing\_\_ method, the standard `dict.__getitem__` (called via `d[k]`), will call it whenever a key is not found.
+By providing a `__missing__` method, the standard `dict.__getitem__` (called via `d[k]`), will call it whenever a key is not found.
 
 See page 92 for an example of a custom class that implements `__missing__`.
 
@@ -261,3 +261,56 @@ The author suggests the it's 'better to subclass `UserDict` rather than `dict`'.
 See page 98 for a comparision of two versions of a custom `StrKeyDict` class - one that extends `dict` and another extending `colletions.UserDict`. The latter has a more succint implementation.
 
 ## Immutable Mappings
+
+All mapping types provided by the standard library are mutable, but it may be important to prevent users from changing a mapping by accident.
+
+The `MappingProxyType` from the `types` module can help to achieve this. Given a mapping, `MappingProxyType` returns a `mappingproxy` instance that is a read-only but dynamic view of the original mapping - this means that updates to the original mapping are reflected to the `mappingproxy`, but updates cannot be made directly to the `mappingproxy`.
+
+See page 100 for an example.
+
+## Dictionary Views
+
+The `dict` instance methods `.keys()`, `.values()`, `.items()` return instances of read-only but dynamic views called `dict_keys`, `dict_values`, and `dict_items` respectively.
+
+They have less memory overhead compared to their counterparts in Python 2, which returned lists that duplicated data in the target dict.
+
+An example usage:
+
+```python
+>>> d = dict(a=1, b=2, c=3)
+>>> values = d.values()
+>>> values
+dict_values([1, 2, 3])
+>>> len(values)
+3
+>>> list(values)
+[1, 2, 3]
+>>> reversed(values)
+<dict_reversevalueiterator object at 0x103362e30>
+>>> values[0]
+Traceback (most recent call last):
+  File "<python-input-48>", line 1, in <module>
+    values[0]
+    ~~~~~~^^^
+TypeError: 'dict_values' object is not subscriptable
+>>> d['z'] = 99
+>>> d
+{'a': 1, 'b': 2, 'c': 3, 'z': 99}
+>>> values
+dict_values([1, 2, 3, 99])
+```
+
+Lastly, note that we cannot create a view object from scratch.
+
+```python
+>>> values_class = type({}.values())
+>>> v = values_class()
+Traceback (most recent call last):
+  File "<python-input-53>", line 1, in <module>
+    v = values_class()
+TypeError: cannot create 'dict_values' instances
+```
+
+See page 102 for some practical implications of how dict works.
+
+## Set Theory
