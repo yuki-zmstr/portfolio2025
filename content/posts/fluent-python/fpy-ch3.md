@@ -311,6 +311,110 @@ Traceback (most recent call last):
 TypeError: cannot create 'dict_values' instances
 ```
 
-See page 102 for some practical implications of how dict works.
+See page 102 for some practical implications of how dict works. Some pointers are that
+
+- dicts have a significant memory overhead compared to an array of pointers.
+- hash tables (the underlying data structure of dicts) have a third of their space empty for efficiency.
+
+Also see [this](https://www.fluentpython.com/extra/internals-of-sets-and-dicts/) for a deep dive into the internals of sets and dicts
 
 ## Set Theory
+
+A set is a collection of unique objects. Set elements need to be hashable.
+
+While the `set` type is not hashable, its immutable counterpart, `frozenset`, is.
+
+The set types implements several infix set operations, such as union (`|`), intersection(`&`), and symmetric difference (`^`).
+
+### Set Literals
+
+In Python 3, the syntax of set literals always uses the `{...}` notation, except for the empty set which uses `set()`.
+
+```python
+>>> s = {'a'}
+>>> type(s)
+<class 'set'>
+>>> s
+{'a'}
+>>> s.pop()
+'a'
+>>> s
+set()
+```
+
+Set literals like `{1,2,3}` is faster than calling the constructor like `set([1,2,3])` because in the latter case, Python will look up the `set` name to fetch the constructor, then build a list, and finally pass the list to the constructor.
+
+On the other hand, in processing a literal like `{1,2,3}`, Python executes a specialized `BUILD_SET` bytecode.
+
+Also try to import the `dis` function and compare the disassembled bytecodes:
+
+- `dis('{1}])` versus
+- `dis('set([1])')`
+
+## Practical Consequences of How Sets Work
+
+Like `dict`, the `set` and `frozenset` types are implemented with a hash table.
+
+Thus, all set elements must be hashable.
+
+Element ordering is not very useful, since for two elements with the same hash code, their position depends on which element was added first. Also adding elements to a set may change the order of existing elements due to table resizing.
+
+See page 107 for more details, as well as [this](https://www.fluentpython.com/extra/internals-of-sets-and-dicts/)
+
+### Set Operations
+
+Page 108 ~ 109 lists the various operators supported by mutable and immutable sets derived from mathematical set theory, e.g. Intersection, Union, Difference, Symmetric Difference, Set Comparision, and Membership Testing.
+
+Note that the infix operators require that both operans be sets, but all other methods only require the object its called on to be a set, and take in one or more iterable arguments.
+
+For example,
+
+```python
+>>> s = {1,2,3}
+>>> l = [2,3]
+>>> s.intersection(l)
+{2, 3}
+```
+
+In addition, Python offers other pratical set methods, like `.add()`, `.clear()`, and `.pop()`
+
+See page 110 for more information.
+
+## Set Operators on Dict Views
+
+Dict view objects returned by the `.keys()` and `.items()` methods share common APIs with `frozenset`.
+
+In particular `dict_keys` and `dict_items` support `&`, `|`, `-`, and `^`.
+
+For example,
+
+```python
+>>> d1 = dict(a=1, b=2, c=3)
+>>> d2 = dict(b=20, c=30, d=40)
+>>> d1.keys() & d2.keys()
+{'c', 'b'}
+```
+
+We get a `set` as a return value. Also, the set operators in dict views work with `set` instances.
+
+```python
+>>> s = {'a', 'd', 'e'}
+>>> d1.keys() & s
+{'a'}
+>>> d1.keys() | s
+{'a', 'e', 'c', 'd', 'b'}
+```
+
+Finally, note that for a `dict_values` view to support set operators, all values in the `dict` need to be hashable.
+
+```python
+>>> d3 = dict(a=1, b=[])
+>>> d3.values() & {1}
+Traceback (most recent call last):
+  File "<python-input-19>", line 1, in <module>
+    d3.values() & {1}
+    ~~~~~~~~~~~~^~~~~
+TypeError: unsupported operand type(s) for &: 'dict_values' and 'set'
+```
+
+In contrast, a `dict_keys` view can always be used as a set since every key is hashable by definition.
