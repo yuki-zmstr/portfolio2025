@@ -26,28 +26,20 @@ homeIntroTitle = 'Hi there!'
 homeIntroContent = """
 My name is Yukihide, and I'm a software engineer based in Tokyo, Japan.
 
+I graduated from the National University of Singapore in 2024 with a B. Eng in Industrial Engineering.
 
 I have a strong passion for AI and machine learning, both the theory and the applications.
 In my current full-time role I am working on a semantic search feature for a hotel CMS.
-I am interested in a range of topics, including LLMs, AI agents, information retrieval, and more.
+My interests include LLMs, AI agents, information retrieval, and more.
 
 Feel free to read [about me](/about) or to look at [my posts](/posts).
 
 ---
 
-Tech stack: 
-{{< icon name="python" >}}, 
-{{< icon name="fastapi" >}}, 
-{{< icon name="docker" >}},
-{{< icon name="mongodb" >}}, 
-{{< icon name="redis" >}},
-MySQL,
-AWS,
-Pinecone (vector database)
+_Tech stack_: Python, FastAPI, Docker, MongoDB, Redis, MySQL, AWS, Pinecone (vector database)
 
 
-
-Socials: [{{< icon name="github" >}}](https://github.com/yuki-zmstr), [{{< icon name="linkedin">}}](https://www.linkedin.com/in/yukihide-takahashi/)
+_Socials_: [Github](https://github.com/yuki-zmstr), [LinkedIn](https://www.linkedin.com/in/yukihide-takahashi/)
 """
 
 # Collection to display on home
