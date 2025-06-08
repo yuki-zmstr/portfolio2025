@@ -36,10 +36,16 @@ Feel free to read [about me](/about) or to look at [my posts](/posts).
 
 ---
 
-_Tech stack_: Python, FastAPI, Docker, MongoDB, Redis, MySQL, AWS, Pinecone (vector database)
+**Tech**: 
+
+| Experience | Technologies |
+|------------|-------------|
+| >= 1 year | Python, FastAPI, Docker, MySQL, AWS, Bitbucket, Github |
+| 6 months ~ 1 year | Redis, Pinecone (vector database), Terraform |
+| ~ 6 months | C++, Java, MongoDB, Gradio | 
 
 
-_Socials_: [Github](https://github.com/yuki-zmstr), [LinkedIn](https://www.linkedin.com/in/yukihide-takahashi/)
+**Socials**: [Github](https://github.com/yuki-zmstr), [LinkedIn](https://www.linkedin.com/in/yukihide-takahashi/)
 """
 
 # Collection to display on home
