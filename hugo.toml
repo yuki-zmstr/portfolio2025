@@ -38,11 +38,12 @@ Feel free to read [about me](/about) or to look at [my posts](/posts).
 
 **Tech**: 
 
-| Experience | Technologies |
+| Experience | Technology |
 |------------|-------------|
-| >= 1 year | Python, FastAPI, Docker, MySQL, AWS, Bitbucket, Github |
-| 6 months ~ 1 year | Redis, Pinecone (vector database), Terraform |
-| ~ 6 months | C++, Java, MongoDB, Gradio | 
+| >= 1 year | {{< tech-tag name="Python" icon="python" >}} {{< tech-tag name="FastAPI" icon="fastapi" >}} {{< tech-tag name="Docker" icon="docker" >}} {{< tech-tag name="MySQL" icon="mysql" >}} {{< tech-tag name="AWS" icon="aws" >}} {{< tech-tag name="Bitbucket" icon="bitbucket" >}} {{< tech-tag name="Github" icon="github" >}} |
+| 6 months ~ 1 year | {{< tech-tag name="Redis" icon="redis" >}} {{< tech-tag name="Pinecone" >}} {{< tech-tag name="Terraform" icon="terraform" >}} |
+| ~ 6 months | {{< tech-tag name="C++" icon="cplusplus" >}} {{< tech-tag name="Java" icon="java" >}} {{< tech-tag name="MongoDB" icon="mongodb" >}} {{< tech-tag name="Gradio" >}} |
+
 
 
 **Socials**: [Github](https://github.com/yuki-zmstr), [LinkedIn](https://www.linkedin.com/in/yukihide-takahashi/)
