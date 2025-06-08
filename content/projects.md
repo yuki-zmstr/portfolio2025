@@ -4,16 +4,37 @@ draft: true
 toc: true
 ---
 
-## Bookybara
+## Noah
+
+{{< icon name="python" >}}
+{{< icon name="huggingface" >}}
+{{< icon name="openai" >}}
+
+Resources
+
+- [Source Code: {{< icon name="github" >}}](https://github.com/yuki-zmstr/noah-read)
 
 ## Recipe.io
 
-[Developer guide](https://ay2324s2-cs2113-w14-2.github.io/tp/DeveloperGuide.html#architecture)
+{{< icon name="java" >}}
 
-[Source Code: {{< icon name="github" >}}](https://github.com/AY2324S2-CS2113-W14-2/tp/tree/master)
+Resources
+
+- [Source Code: {{< icon name="github" >}}](https://github.com/AY2324S2-CS2113-W14-2/tp/tree/master)
+- [Developer guide](https://ay2324s2-cs2113-w14-2.github.io/tp/DeveloperGuide.html#architecture)
+
+\*Below projects are not being actively maintained
+
+## Food Blog
+
+{{< icon name="angular" >}}
+{{< icon name="firebase" >}}
+{{< icon name="tailwindcss" >}}
 
 ## Performance Tracking Tool
 
+{{< icon name="google-spreadsheet" >}} {{< icon name="python" >}}
+
 ## Resource Optimization Tool
 
-Check out the code on {{< icon name="github" >}} GitHub.
+{{< icon name="excel" >}}
