@@ -32,6 +32,22 @@ In my current full-time role I am working on a semantic search feature for a hot
 I am interested in a range of topics, including LLMs, AI agents, information retrieval, and more.
 
 Feel free to read [about me](/about) or to look at [my posts](/posts).
+
+---
+
+Tech stack: 
+{{< icon name="python" >}}, 
+{{< icon name="fastapi" >}}, 
+{{< icon name="docker" >}},
+{{< icon name="mongodb" >}}, 
+{{< icon name="redis" >}},
+MySQL,
+AWS,
+Pinecone (vector database)
+
+
+
+Socials: [{{< icon name="github" >}}](https://github.com/yuki-zmstr), [{{< icon name="linkedin">}}](https://www.linkedin.com/in/yukihide-takahashi/)
 """
 
 # Collection to display on home
@@ -50,13 +66,13 @@ showCurrentPage = true
 home = "Home"
 
 # Social icons
-[[params.social]]
-name = "linkedin"
-url = "https://www.linkedin.com/in/yukihide-takahashi/"
-
-[[params.social]]
-name = "github"
-url = "https://github.com/yuki-zmstr"
+# [[params.social]]
+# name = "linkedin"
+# url = "https://www.linkedin.com/in/yukihide-takahashi/"
+# 
+# [[params.social]]
+# name = "github"
+# url = "https://github.com/yuki-zmstr"
 
 # Main menu pages
 [[params.menu]]
@@ -70,6 +86,10 @@ url = "/about"
 [[params.menu]]
 name = "posts"
 url = "/posts"
+
+[[params.menu]]
+name = "projects"
+url = "/projects"
 
 
 # Syntax highlight on code blocks
