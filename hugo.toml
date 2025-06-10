@@ -40,9 +40,10 @@ Feel free to read [about me](/about) or to look at [my posts](/posts).
 
 | Experience | Technology |
 |------------|-------------|
-| >= 1 year | {{< tech-tag name="Python" icon="python" >}} {{< tech-tag name="FastAPI" icon="fastapi" >}} {{< tech-tag name="Docker" icon="docker" >}} {{< tech-tag name="MySQL" icon="mysql" >}} {{< tech-tag name="AWS" icon="aws" >}} {{< tech-tag name="Bitbucket" icon="bitbucket" >}} {{< tech-tag name="Github" icon="github" >}} |
-| 6 months ~ 1 year | {{< tech-tag name="Redis" icon="redis" >}} {{< tech-tag name="Pinecone" >}} {{< tech-tag name="Terraform" icon="terraform" >}} |
-| ~ 6 months | {{< tech-tag name="C++" icon="cplusplus" >}} {{< tech-tag name="Java" icon="java" >}} {{< tech-tag name="MongoDB" icon="mongodb" >}} {{< tech-tag name="Gradio" >}} |
+| >= 1 year | {{< tech-tag name="Python" icon="python" url="https://docs.python.org/3/" >}} {{< tech-tag name="FastAPI" icon="fastapi" url="https://fastapi.tiangolo.com/" >}} {{< tech-tag name="Docker" icon="docker" url="https://docs.docker.com/" >}} {{< tech-tag name="MySQL" icon="mysql" url="https://dev.mysql.com/doc/" >}} {{< tech-tag name="AWS" icon="aws" url="https://docs.aws.amazon.com/" >}} {{< tech-tag name="Bitbucket" icon="bitbucket" url="https://bitbucket.org/" >}} {{< tech-tag name="Github" icon="github" url="https://github.com/" >}} |
+| 6 months ~ 1 year | {{< tech-tag name="Redis" icon="redis" url="https://redis.io/docs/" >}} {{< tech-tag name="Pinecone" url="https://docs.pinecone.io/" >}} {{< tech-tag name="Terraform" icon="terraform" url="https://developer.hashicorp.com/terraform/docs" >}} |
+| ~ 6 months | {{< tech-tag name="C++" icon="cplusplus" url="https://en.cppreference.com/w/" >}} {{< tech-tag name="Java" icon="java" url="https://docs.oracle.com/en/java/" >}} {{< tech-tag name="MongoDB" icon="mongodb" url="https://www.mongodb.com/docs/" >}} {{< tech-tag name="Gradio" url="https://www.gradio.app/docs/" >}} |
+
 
 
 
