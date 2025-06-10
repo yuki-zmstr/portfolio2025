@@ -41,7 +41,7 @@ This course introduces basic concepts in finance and accounting. I took this cou
 
 ### CS2113 Software Engineering & Object-Oriented Programming, Prof. Akshay Narayan
 
-AY23-24 Sem 2, [course description](https://nusmods.com/courses/CS2113/software-engineering-object-oriented-programming")
+AY23-24 Sem 2, [course description](https://nusmods.com/courses/CS2113/software-engineering-object-oriented-programming)
 
 This course introduces students to various aspects of professional software engineering, from project management models to key software engineering principles. The highlight of the course is the team project. Over 5 weeks, a team of 4 students will collaborate on a CLI app coded in Java, using GitHub for version control. I feel this course proves wrong people who claim that the skills in professional software engineering, primarily the soft ones, cannot be learnt in school. I was one of those people, until I took this course. Above all, I learned the importance of not reinventing the wheel, especially regarding coding principles (Separation of Concerns, SLAP, coding patterns, etc). Several professional coders have set forth principles they felt was important based on their experience, and as a novice in software development, it helps to follow those knowing that most likely they will turn out to be effective.
 
