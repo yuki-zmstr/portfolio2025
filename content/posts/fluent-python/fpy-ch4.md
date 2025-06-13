@@ -2,7 +2,7 @@
 date: "2025-06-13"
 title: "Fluent Python Chapter 4: Unicode Text Versus Bytes"
 author: "Yukihide Takahashi"
-summary: "something"
+summary: "The binary sequence types and codecs"
 readTime: true
 toc: true
 ---
