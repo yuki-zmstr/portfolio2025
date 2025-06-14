@@ -51,7 +51,7 @@ This app was developed as a team project in a university class: [Software Engine
 
 ---
 
-## Food Blog - Yumz-and-Sweetz
+## Yumz-and-Sweetz
 
 Yumz-and-Sweetz was a full stack app where I posted pictures of food I made, and users can view and add comments to food posts.
 
