@@ -1,5 +1,5 @@
 ---
-date: "2025-06-13"
+date: "2025-06-14"
 title: "Fluent Python Chapter 4: Unicode Text Versus Bytes"
 author: "Yukihide Takahashi"
 summary: "The binary sequence types and codecs"
@@ -150,3 +150,51 @@ For example, if we assume a stream of bytes is human plain text, and we see `b'\
 Also, although binary sequences of encoded text usually don't have explicit hints of their encoding, the UTF formats may prepend a byte order mark to the text content.
 
 ### Byte Order Mark: A Useful Gremlin
+
+Let's look at the UTF-16 encoding of 'El Niño' again.
+
+```python
+u16 = 'El Niño'.encode('utf_16')
+>>> u16
+b'\xff\xfeE\x00l\x00 \x00N\x00i\x00\xf1\x00o\x00'
+```
+
+The bytes `b'\xff\xfe'` are a BOM denoting the 'little-endian' byte order of the Intel CPU where the encoding was performed.
+
+On a little-endian machine, the least significant byte comes first for each code point.
+
+Looking at the decimal representation of the byte string above,
+
+```python
+>>> list(u16)
+[255, 254, 69, 0, 108, 0, 32, 0, 78, 0, 105, 0, 241, 0, 111, 0]
+```
+
+we see that 'E' (code point U+0045, decimal 69) is encoded in byte offsets 2 and 3 as `69` and `0`.
+
+On a big-endian machine, the most significant byte comes first: 'E' would be encoded as `0` and `69`.
+
+To make clear the byte encoding, UTF-16 prepends the text to be encoded with the invisible character
+`ZERO WIDTH NO-BREAK SPACE (U+FEFF)`. On a little-endian CPU, this is encoded as `b'\xff\xfe'`.
+
+Since there is no U+FFFE character in Unicode, the byte sequence `b'\xff\xfe'` can only mean the `ZERO WIDTH NO-BREAK SPACE` on a little-endian encoding. Therefore the codec knows which byte ordering to use.
+
+One advantage of UTF-8 is that it generates the same byte sequence no matter the machine endianness, so no BOM is needed.
+
+See pages 130 and 131 for more details about LE versus BE.
+
+### Handling Text Files
+
+The author introduces the idea of the "Unicode Sandwich", where when handling text I/O, it is best practice to decode bytes to `str` on input as early as possible, execute your business logic on strings, and encode text to bytes on output as late as possible.
+
+In Python 3, `open()` will decode when reading and encode when writing files in text mode. Therefore, `my_file.read()` and `my_file.write(text)` produce `str` objects.
+
+Pages 132 ~ 139 explain encoding defaults, and why we should not rely on them.
+
+In summary, the author advices to specify an `encoding=` argument explicitly.
+
+\*Other topics covered in this chapter:
+
+- Normalizing Unicode across Locales for Comparison
+- the `unicodedata` module
+- how `str` and `bytes` behave differently for certain standard library functions, such as RegExp and os functions.
