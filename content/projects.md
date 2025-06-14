@@ -7,7 +7,7 @@ toc: true
 
 ## Noah
 
-Noah is a reading assistant that can
+Noah is an AI-powered reading assistant that can:
 
 1. Recommend books
 2. Schedule reading time
@@ -16,7 +16,7 @@ Noah is a reading assistant that can
 
 based on natural language instructions.
 
-Development in progress
+Development in progress.
 
 <!-- [_Project Link_](https://yuki-zmstr-noah-read.hf.space) -->
 
