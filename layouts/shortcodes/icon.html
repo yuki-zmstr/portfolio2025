@@ -1,0 +1,6 @@
+{{- $name := .Get "name" -}}
+{{- $class := .Get "class" | default "icon-m" -}}
+
+<span class="{{ $class }}">
+  {{- partial "svg.html" (dict "name" $name) -}}
+</span>
