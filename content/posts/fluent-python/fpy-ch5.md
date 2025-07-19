@@ -2,7 +2,7 @@
 date: "2025-06-26"
 title: "Fluent Python Chapter 5: Data Class Builders"
 author: "Yukihide Takahashi"
-summary: ""
+summary: "Ways to represent data, and anti-patterns"
 readTime: true
 toc: true
 ---
