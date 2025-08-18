@@ -29,15 +29,15 @@ homeIntroContent = """
 
 [Reference](https://www.informit.com/articles/article.aspx?p=1235624&seqNum=6)
 
-My name is Yukihide, and I'm a software engineer based in Tokyo, Japan.
+**Yukihide Takahashi** is a software engineer based in Tokyo, Japan who loves capybaras.
 
-I graduated from the National University of Singapore in 2024 with a B. Eng in Industrial Engineering.
+He graduated from the National University of Singapore in 2024 with a B. Eng in Industrial Engineering.
 
-I have a strong passion for AI and machine learning, both the theory and the applications.
-In my current full-time role I am working on a semantic search feature for a hotel CMS.
-My interests include LLMs, AI agents, information retrieval, and more.
+He has a strong passion for AI and machine learning, both the theory and the applications.
+In his current full-time role he is working on a semantic search feature for a hotel CMS.
+His interests include LLMs, AI agents, information retrieval, and more.
 
-Feel free to read [about me](/about) or to look at [my posts](/posts).
+Feel free to read [about Yuki](/about) or to look at [his posts](/posts).
 
 ---
 
@@ -51,7 +51,7 @@ Feel free to read [about me](/about) or to look at [my posts](/posts).
 
 **Socials**: [Github](https://github.com/yuki-zmstr), [LinkedIn](https://www.linkedin.com/in/yukihide-takahashi/)
 
-Last Updated: Jun 17 2025
+Last Updated: Aug 18 2025
 
 """
 
