@@ -22,8 +22,13 @@ colorPalette = 'default'
 hideHeader = false
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Hi there!'
+# homeIntroTitle = 'Hi there.'
 homeIntroContent = """
+
+    "Always leave the campground cleaner than you found it."
+
+[Reference](https://www.informit.com/articles/article.aspx?p=1235624&seqNum=6)
+
 My name is Yukihide, and I'm a software engineer based in Tokyo, Japan.
 
 I graduated from the National University of Singapore in 2024 with a B. Eng in Industrial Engineering.
