@@ -23,9 +23,7 @@ Noah is an AI-powered reading assistant that can:
 3. Record book reviews, and
 4. Explain word meanings
 
-based on natural language instructions. Development in progress. [Source Code](https://github.com/yuki-zmstr/noah-read)
-
-<!-- [_Project Link_](https://yuki-zmstr-noah-read.hf.space) -->
+based on natural language instructions. Please reach out if you'd like to see a demo! [Source Code](https://github.com/yuki-zmstr/noah-read)
 
 {{< center >}}
 
