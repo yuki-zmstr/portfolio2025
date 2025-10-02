@@ -34,7 +34,6 @@ homeIntroContent = """
 He graduated from the National University of Singapore in 2024 with a B. Eng in Industrial Engineering and a minor in Mathematics.
 
 He has a strong passion for AI and machine learning, both the theory and the applications.
-In his current full-time role he is working on a semantic search feature for a hotel CMS.
 His interests include LLMs, AI agents, information retrieval, and more.
 
 Feel free to read [about Yuki](/about) or to look at [his posts](/posts).
@@ -49,7 +48,7 @@ Feel free to read [about Yuki](/about) or to look at [his posts](/posts).
 
 **Socials**: [Github](https://github.com/yuki-zmstr), [LinkedIn](https://www.linkedin.com/in/yukihide-takahashi/)
 
-Last Updated: Sep 21 2025
+Last Updated: Oct 2025
 
 """
 

@@ -22,7 +22,8 @@ Here's a quick summary of my journey so far:
 
 **Career**
 
-- July 2024 ~ Present (Full Time) Software Developer, _Kotozna Inc_, Tokyo, Japan
+- Oct 2025 ~ Present (Full Time) Software Developer, _XAION DATA Inc_, Tokyo, Japan
+- July 2024 ~ Sep 2025 (Full Time) Software Developer, _Kotozna Inc_, Tokyo, Japan
 - Aug 2023 ~ Apr 2024 (Part-time Internship) Data Analyst Intern, _Abbott Laboratories_, Singapore
 - May 2023 ~ Aug 2023 (Internship) Student Researcher, _Centre of Excellence in Modelling and Simulation for Next Generation Ports_, Singapore
 - Aug 2018 ~ Aug 2020 (Full Time) Full-time National Serviceman, _Singapore Armed Forces_, Singapore
