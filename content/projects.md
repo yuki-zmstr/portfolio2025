@@ -1,5 +1,5 @@
 ---
-title: "Past Projects"
+title: "Projects"
 ---
 
 - [Noah](#noah)
